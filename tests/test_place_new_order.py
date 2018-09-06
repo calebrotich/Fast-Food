@@ -9,9 +9,9 @@ Orders = Orders()
 first_key = list(Orders.keys())[0]
 
 
-""" Test GET specific order """
+""" Test POST new order """
 
-def test_fetch_specific_order():
+def test_place_new_order():
     result = app.test_client()
-    response = result.get('/api/v1/orders/'+first_key+'/', content_type='application/json')
+    response = result.post('/api/v1/orders', content_type='application/json')
     assert(response.status_code == 200)
