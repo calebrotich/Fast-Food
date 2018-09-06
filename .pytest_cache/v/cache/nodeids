@@ -1,4 +1,4 @@
 [
-  "tests/test_fetch_orders.py::test_fetch_all_orders",
-  "tests/test_fetch_specific_order.py::test_fetch_specific_order"
+  "test_fetch_orders.py::test_fetch_all_orders",
+  "test_fetch_specific_order.py::test_fetch_specific_order"
 ]
