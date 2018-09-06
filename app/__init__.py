@@ -14,3 +14,14 @@ def fetch_all_orders():
 def fetch_specific_order(id):
     order = Orders[id]
     return jsonify(order)
+
+@app.route('/api/v1/orders', methods = ['POST'])
+def place_new_order():
+    Orders['3'] = {
+        "order_id" : 3,
+        "food_ordered": "Juice",
+        "quantity" : 1,
+        "date_ordered" : "06/09/2018",
+        "status" : "Pending"
+    }
+    return "Order made successfully"
