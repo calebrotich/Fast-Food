@@ -12,7 +12,7 @@ install:
 # command to run tests
 script:
   - virtualenv env
-  - pytest
+  - coverage run -m pytest
 
 after-success:
   - coveralls
