@@ -1,4 +1,4 @@
-from app.app import app
+from app import app
 import pytest
 from flask import json
 from app.data import Orders
