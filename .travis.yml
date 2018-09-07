@@ -13,3 +13,6 @@ install:
 script:
   - virtualenv env
   - pytest
+
+  after-success:
+  - coveralls
