@@ -11,4 +11,5 @@ install:
 
 # command to run tests
 script:
+  - virtualenv env
   - pytest
