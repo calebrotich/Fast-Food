@@ -7,7 +7,6 @@ from app.data import Orders
 Orders = Orders()
 first_key = list(Orders.keys())[0]
 
-
 """ Test GET all orders """
 
 def test_fetch_all_orders():
