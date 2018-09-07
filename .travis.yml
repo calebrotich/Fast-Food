@@ -14,5 +14,5 @@ script:
   - virtualenv env
   - pytest
 
-  after-success:
+after-success:
   - coveralls
