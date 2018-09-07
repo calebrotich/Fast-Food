@@ -1,5 +1,6 @@
 [
   "tests/test_fetch_orders.py::test_fetch_all_orders",
   "tests/test_fetch_specific_order.py::test_fetch_specific_order",
-  "tests/test_place_new_order.py::test_place_new_order"
+  "tests/test_place_new_order.py::test_place_new_order",
+  "tests/test_update_order_status.py::test_fetch_specific_order"
 ]

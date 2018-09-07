@@ -1,5 +1,4 @@
 import sys
-sys.path.append('C:\\Andela\\Fast-Food')
 import pytest
 from flask import json
 from app import app
