@@ -13,6 +13,7 @@ install:
 script:
   - virtualenv env
   - coverage run -m pytest
+  - coverage report
 
 after-success:
   - coveralls
