@@ -15,5 +15,6 @@ script:
   - coverage run -m pytest
   - coveralls
 
+# Post coverage results to coverage.io
 after-success:
   - coveralls
