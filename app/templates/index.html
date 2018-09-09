@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Fast Food Fast</title>
+</head>
+<body>
+    <h2 class="text-center">
+        End Points for Fast Food Fast
+    </h2>
+    <table class="table table-striped table-bordered table-hover">
+        <tr>
+            <th>VERB (Click links to view)</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="/api/v1/orders">GET all orders</a>
+            </td>
+            <td>
+                Fetch all orders placed by users
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="/api/v1/orders/1">GET a specific order</a>
+            </td>
+            <td>
+                Fetch a specific order whose id is specified in the address
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form action="/api/v1/orders" method="POST">
+                    <input type="submit" class="btn btn-sm" value="POST (Place a new order)">
+                </form>
+            </td>
+            <td>
+                Link adds a new order which is hard coded
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                    <form action="/api/v1/orders/1/Active" method="PUT">
+                        <input type="submit" class="btn btn-sm" value="PUT (Update Order Status)">
+                    </form>
+            </td>
+            <td>
+                Updates the Order Specified in the address with the status specified in the last parameter of the address (Test from postman)
+            </td>
+        </tr>
+    </table>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
