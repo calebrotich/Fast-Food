@@ -13,6 +13,7 @@ install:
 script:
   - virtualenv env
   - coverage run --source=app -m pytest
+  - coverage report
   - coveralls
   
 # Post coverage results to coverage.io
