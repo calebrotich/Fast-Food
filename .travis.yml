@@ -12,7 +12,7 @@ install:
 # command to run tests
 script:
   - virtualenv env
-  - coverage run -m pytest && coverage report
+  - coverage run -m pytest
   - coveralls
 
 # Post coverage results to coverage.io
