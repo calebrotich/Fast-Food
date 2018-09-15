@@ -10,8 +10,8 @@ install:
 
 # command to run tests
 script:
-  - virtualenv env
-  - coverage run --source=app -m pytest
+  - coverage run -m pytest
+  - coverage report
   
 # Post coverage results to coverage.io
 after-success:
