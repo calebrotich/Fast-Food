@@ -1,6 +1,0 @@
-[
-  "tests/test_endpoints.py::test_fetch_all_orders",
-  "tests/test_endpoints.py::test_place_new_order",
-  "tests/test_endpoints.py::test_update_specific_order",
-  "tests/test_endpoints.py::test_fetch_specific_order"
-]
