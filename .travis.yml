@@ -2,7 +2,7 @@ language: python
 
 # python version
 python:
-  - "3.6.4"
+  - "3.6"
 
 # command to install dependencies
 install:
@@ -12,7 +12,6 @@ install:
 script:
   - virtualenv env
   - pytest --cov=tests/
-  - coverage report
   
 # Post coverage results
 after-success:
