@@ -12,6 +12,7 @@ install:
 script:
   - virtualenv env
   - pytest --cov=tests/
+  - coverage report
   
 # Post coverage results
 after-success:
