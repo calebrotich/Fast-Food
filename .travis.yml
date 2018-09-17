@@ -12,6 +12,6 @@ install:
 script:
 - pytest --cov=tests/
   
-# Post coverage results to coverage.io
+# Post coverage results
 after-success:
   - coveralls
