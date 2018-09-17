@@ -10,7 +10,7 @@ install:
 
 # command to run tests
 script:
-
+  - virtualenv env
   - pytest --cov=tests/
   
 # Post coverage results
